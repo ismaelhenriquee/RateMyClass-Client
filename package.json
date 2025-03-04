@@ -8,7 +8,7 @@
         "start": "next start",
         "lint": "eslint --ext .ts,.tsx .",
         "typecheck": "tsc --project tsconfig.json --noEmit",
-        "test": "jest",
+        "test": "jest --testPathIgnorePatterns tests/e2e",
         "test:watch": "pnpm test --watch",
         "test:snapshot": "pnpm test --updateSnapshot",
         "test:ci": "pnpm test --ci --coverage",
@@ -28,7 +28,7 @@
         "cors": "^2.8.5",
         "jsonwebtoken": "^9.0.2",
         "lucide-react": "^0.469.0",
-        "next": "14.2.13",
+        "next": "15.2.1",
         "next-auth": "^4.24.11",
         "nookies": "^2.5.2",
         "react": "^18",
@@ -40,6 +40,7 @@
         "zod": "^3.24.2"
     },
     "devDependencies": {
+        "@swc/jest": "^0.2.37",
         "@testing-library/jest-dom": "^6.6.3",
         "@testing-library/react": "^16.2.0",
         "@types/cors": "^2.8.17",
@@ -61,6 +62,7 @@
         "postcss": "^8",
         "prettier": "^3.3.3",
         "tailwindcss": "^3.4.1",
+        "ts-node": "^10.9.2",
         "typescript": "^5"
     }
 }

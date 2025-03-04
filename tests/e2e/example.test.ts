@@ -1,3 +1,4 @@
+import React from 'react';
 import { test, expect } from '@playwright/test';
 
 test('deve exibir o título de boas-vindas na página inicial', async ({

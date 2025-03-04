@@ -1,5 +1,6 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
-import WelcomeScreen from '@/app/page';
+import WelcomeScreen from '../../src/app/page';
 
 describe('WelcomeScreen', () => {
     it('deve renderizar o título de boas-vindas', () => {
@@ -20,6 +21,4 @@ describe('WelcomeScreen', () => {
         expect(githubLink).toBeInTheDocument();
         expect(shadcnLink).toBeInTheDocument();
     });
-
-  
 });
